@@ -136,6 +136,22 @@
 				grid-template-columns: 1fr;
 			}
 		}
+
+		.signature {
+			text-align: center;
+			margin-top: 3rem;
+			padding: 1rem;
+			color: #d53f8c;
+			font-size: 1.3rem;
+			font-style: italic;
+			animation: fadeIn 1s ease;
+		}
+		
+		.signature .heart {
+			display: inline-block;
+			transform: rotate(90deg);
+			animation: pulse 1.5s infinite;
+		}
 	</style>
 </head>
 <body>
@@ -149,7 +165,7 @@
 		<div class="cards">
 			<div class="card">
 				<h2>Мамі <span class="heart">❤️</span></h2>
-				<p>Мама, ти завжди поруч із турботою та підтримкою. Дякую тобі за мудрість і тепло, які роблять нашу сім’ю справжньою. Ціную тебе і дуже вдячний за все!</p>
+				<p>Мама, ти завжди поруч із турботою та підтримкою. Дякую тобі за мудрість і тепло, які роблять нашу сім'ю справжньою. Ціную тебе і дуже вдячний за все!</p>
 			</div>
 
 			<div class="card">
@@ -159,9 +175,12 @@
 
 			<div class="card">
 				<h2>Бабусі <span class="heart">❤️</span></h2>
-				<p>Бабусю, ваша турбота і мудрість багато значать для мене. Ваші історії і теплі обійми роблять життя світлішим. Дякую вам за все!</p>
+				<p>Дорога бабусю, твоя любов і мудрість сформували нашу родину безліччю способів. Твої історії, твоя кухня і твої теплі обійми роблять життя особливим. Дякую за всі прекрасні спогади!</p>
 			</div>
 		</div>
+		<footer class="signature">
+			<p>З любов'ю, Артур <span class="heart">:)</span></p>
+		</footer>
 	</div>
 </body>
 </html>
