@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>З 8 Березня! 💐</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Lora', serif;
+			background: linear-gradient(135deg, #fff5f7 0%, #fdf2f8 100%);
+			min-height: 100vh;
+			padding: 2rem;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		header {
+			text-align: center;
+			margin-bottom: 3rem;
+			animation: fadeIn 1s ease;
+		}
+
+		h1 {
+			color: #d53f8c;
+			font-size: 3rem;
+			margin-bottom: 1rem;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.date {
+			color: #805ad5;
+			font-size: 1.5rem;
+			margin-bottom: 2rem;
+		}
+
+		.cards {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 2rem;
+			padding: 1rem;
+		}
+
+		.card {
+			background: white;
+			border-radius: 20px;
+			padding: 2rem;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease;
+			animation: slideUp 0.5s ease forwards;
+			opacity: 0;
+		}
+
+		.card:hover {
+			transform: translateY(-10px);
+		}
+
+		.card h2 {
+			color: #d53f8c;
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			text-align: center;
+		}
+
+		.card p {
+			color: #4a5568;
+			line-height: 1.8;
+			font-size: 1.1rem;
+			text-align: center;
+		}
+
+		.heart {
+			color: #e53e3e;
+			font-size: 1.5em;
+			display: inline-block;
+			animation: pulse 1s infinite;
+		}
+
+		@keyframes pulse {
+			0% { transform: scale(1); }
+			50% { transform: scale(1.1); }
+			100% { transform: scale(1); }
+		}
+
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+
+		@keyframes slideUp {
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.card:nth-child(1) { animation-delay: 0.2s; }
+		.card:nth-child(2) { animation-delay: 0.4s; }
+		.card:nth-child(3) { animation-delay: 0.6s; }
+
+		.flowers {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23d53f8c" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+			background-size: cover;
+			pointer-events: none;
+			z-index: -1;
+		}
+
+		@media (max-width: 768px) {
+			body {
+				padding: 1rem;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			.date {
+				font-size: 1.2rem;
+			}
+
+			.cards {
+				grid-template-columns: 1fr;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="flowers"></div>
+	<div class="container">
+		<header>
+			<h1>З 8 Березня!</h1>
+			<div class="date">8 березня 2025</div>
+		</header>
+
+		<div class="cards">
+			<div class="card">
+				<h2>Мамі <span class="heart">❤️</span></h2>
+				<p>Мама, ти завжди поруч із турботою та підтримкою. Дякую тобі за мудрість і тепло, які роблять нашу сім’ю справжньою. Ціную тебе і дуже вдячний за все!</p>
+			</div>
+
+			<div class="card">
+				<h2>Сестрі <span class="heart">❤️</span></h2>
+				<p>Сестричко, з тобою завжди весело. Твої витівки й упертість – то окремий вид мистецтва. Добре, що ти не просто сестра, а ще й напарниця в усіх двіжах ))))))!</p>
+			</div>
+
+			<div class="card">
+				<h2>Бабусі <span class="heart">❤️</span></h2>
+				<p>Бабусю, ваша турбота і мудрість багато значать для мене. Ваші історії і теплі обійми роблять життя світлішим. Дякую вам за все!</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
